@@ -1,0 +1,41 @@
+form {
+  width: 50%;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    mat-form-field {
+      width: 100%;
+
+      ::ng-deep .mat-form-field-wrapper {
+        padding-bottom: 0px;
+      }
+    }
+
+    .mat-radio-button ~ .mat-radio-button {
+      margin-left: 16px;
+    }
+
+    & ~ .row {
+      margin-top: 10px;
+    }
+  }
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+
+  td {
+    max-width: 400px;
+  }
+  ::ng-deep td.mat-cell {
+    padding: 0 5px;
+  }
+}
